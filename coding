@@ -1,0 +1,34 @@
+# Exercise 1: Work with the person next to you to design 
+# classes to manage the products, customers, and purchase 
+# orders for an online book store such as amazon.com. 
+# Outline the data attributes and useful methods for 
+# each class. You can discuss and create the outline together. 
+
+class bookstore(object):
+    """Creates classes to manage an online bookstore""" 
+    
+    # Special Method: Always FIRST
+    def __init__(self, product, customers, purchases):
+        """Create a new instance from class."""
+        
+        # "__" is two underscores. 
+        # A constructor method is a special function that creates an instance of the class.
+        # Any initalising you would like to do with your class object.
+        # Data attributes are defined here with the "self." prefix
+        self.product = product
+        self.customers = customers
+        self.purchases = purchases
+
+    def product_list(self):
+        """DocString to describe method."""
+        return "product list is:" + self.product
+        # Some methods that do something. Get() and set() methods are common.
+        # Self is used to represent the instance of the class. 
+        # When working out the structure we can originally just leave "pass".
+    
+    def customer_list(self):
+        return "customer list is:" + self.customers
+    
+    def purchase_list(self):
+        return "purchase list is: " + self.purchases
+ 
